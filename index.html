@@ -3,109 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Gym</title>
+    <title>DevOps Engineer - Rushikesh Satange</title>
     <style>
-        @keyframes slideInFromLeft {
-            0% {
-                transform: translateX(-100%);
-            }
-            100% {
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #87CEEB; /* Change background color to sky blue */
+            background-color: #87CEEB; /* Sky Blue */
         }
-
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #555;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0 15px;
-        }
-
-        .banner {
-            background-image: url('gym_banner.jpg');
-            background-size: cover;
-            height: 400px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            animation: fadeIn 1.5s ease-out;
-        }
-
-        .banner h1 {
-            font-size: 3em;
-            color: #fff;
-            text-shadow: 2px 2px 4px #000;
-        }
-
-        .content {
             padding: 20px;
             text-align: center;
-            animation: slideInFromLeft 1.5s ease-out;
         }
-
+        h1 {
+            margin-top: 0;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
         footer {
             background-color: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 10px 20px;
             text-align: center;
             position: fixed;
             bottom: 0;
             width: 100%;
         }
+        /* Animation */
+        @keyframes colorChange {
+            0% { color: #ff0000; } /* Red */
+            50% { color: #0000ff; } /* Blue */
+            100% { color: #ff0000; } /* Red */
+        }
+        .developer-name {
+            animation: colorChange 2s infinite;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Gym</h1>
+        <h1>DevOps Engineer</h1>
+        <p class="developer-name">Rushikesh Satange</p> <!-- Added class for animation -->
     </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Classes</a>
-        <a href="#">Contact Us</a>
-    </nav>
-    <div class="banner">
-        <h1>Your Fitness Journey Starts Here</h1>
-    </div>
-    <div class="content">
-        <h2>About Us</h2>
-        <p>Welcome to Our Gym! We are dedicated to helping you achieve your fitness goals.</p>
-        <h2>Classes</h2>
-        <p>Check out our variety of classes to suit all fitness levels and interests.</p>
-        <h2>Contact Us</h2>
-        <p>Get in touch with us today to start your fitness journey!</p>
-    </div>
+    
+    <section>
+        <h2>About Me</h2>
+        <p>I am a DevOps engineer passionate about automating, optimizing, and improving the development and deployment processes. With experience in various tools and technologies like Docker, Kubernetes, Jenkins, and Ansible, I strive to streamline the software delivery lifecycle.</p>
+    </section>
+    
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>Continuous Integration/Continuous Deployment (CI/CD)</li>
+            <li>Infrastructure as Code (IaC)</li>
+            <li>Containerization (Docker, Kubernetes)</li>
+            <li>Configuration Management (Ansible, Puppet, Chef)</li>
+            <li>Version Control (Git, GitHub, Bitbucket)</li>
+            <li>Monitoring and Logging</li>
+            <li>Scripting (Bash, Python)</li>
+            <li>Cloud Platforms (AWS, Azure, GCP)</li>
+        </ul>
+    </section>
+    
     <footer>
-        <p>&copy; 2024 Our Gym. All rights reserved.</p>
+        <p>&copy; 2024 Rushikesh Satange - DevOps Engineer</p>
     </footer>
 </body>
 </html>
