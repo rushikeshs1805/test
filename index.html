@@ -1,5 +1,111 @@
-<h1> HELLO THIS IS FIRST JENKINS JOB </h1>
-<h3> Welcome here, added this line just to see the changes</h3>
-<h5> this is a test line</h5>
-<h3> Webhook changes</h3>
-<h3> this is practice line</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Gym</title>
+    <style>
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #87CEEB; /* Change background color to sky blue */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+
+        .banner {
+            background-image: url('gym_banner.jpg');
+            background-size: cover;
+            height: 400px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .banner h1 {
+            font-size: 3em;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            animation: slideInFromLeft 1.5s ease-out;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Gym</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Classes</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <div class="banner">
+        <h1>Your Fitness Journey Starts Here</h1>
+    </div>
+    <div class="content">
+        <h2>About Us</h2>
+        <p>Welcome to Our Gym! We are dedicated to helping you achieve your fitness goals.</p>
+        <h2>Classes</h2>
+        <p>Check out our variety of classes to suit all fitness levels and interests.</p>
+        <h2>Contact Us</h2>
+        <p>Get in touch with us today to start your fitness journey!</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Our Gym. All rights reserved.</p>
+    </footer>
+</body>
+</html>
